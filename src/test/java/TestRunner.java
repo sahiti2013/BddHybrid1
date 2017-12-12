@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
     @RunWith(Cucumber.class)
     @CucumberOptions(features = "src/test/java/featureFiles/",
             tags ={"@EnterInvalidEmail,@AddTOCart"},
-            format = "html:target/CucumberHTMLReports")
+            format = {"json:target/cucumber.json","html:target/CucumberHTMLReports"})
     public class TestRunner {
 
 
