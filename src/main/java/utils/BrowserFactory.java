@@ -23,13 +23,13 @@ public class BrowserFactory extends BasePage {
         String path = System.getProperty("user.dir") + "/src/main/resources/";
         if (AutomationConstants.remoteBrowser == true) {
             System.out.println("selenium grid is running");
-            /*DesiredCapabilities caps = new DesiredCapabilities();
+            DesiredCapabilities caps = new DesiredCapabilities();
             caps.setPlatform(Platform.WIN10);
             caps.setBrowserName("chrome");
-            caps.setVersion("");*/
-            DesiredCapabilities caps = DesiredCapabilities.safari();
+            caps.setVersion("");
+            /*DesiredCapabilities caps = DesiredCapabilities.safari();
             caps.setCapability("platform", "macOS 10.12");
-            caps.setCapability("version", "11.0");
+            caps.setCapability("version", "11.0");*/
             try {
 
 
